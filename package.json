@@ -1,0 +1,29 @@
+{
+  "name": "koment-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "./node_modules/.bin/mocha test/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "6.5.x"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "joi": "^9.0.4",
+    "q": "^1.4.1",
+    "redis": "^2.6.2"
+  },
+  "devDependencies": {
+    "better-assert": "^1.0.2",
+    "mocha": "^3.0.2",
+    "supertest": "^2.0.0"
+  }
+}
