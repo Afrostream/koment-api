@@ -38,7 +38,8 @@ module.exports.index = function (req, res) {
        var k = JSON.parse(komment);
        return {
          user: {
-           nickname: k.user.nickname
+           nickname: k.user.nickname,
+           avatar: k.user.avatar
          },
          timecode: k.timecode,
          message: k.message

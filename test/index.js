@@ -23,8 +23,10 @@ describe('API: read, create comments', function () {
   var randomVideo = 'test://randomVideo/'+Date.now()+'/'+Math.random();
   var randomTimecode = Math.round(Math.random() * 1000);
   var randomMessage = "random message " + Math.random();
+  var randomAvatar = 'http://google.fr/';
   var randomUser = {
     nickname: randomNickname,
+    avatar: randomAvatar,
     provider: 'test',
     id: randomId,
     token: randomToken
@@ -79,6 +81,7 @@ describe('API: read, create comments', function () {
           assert(res.body.length === 1);
           assert(res.body[0].user);
           assert(res.body[0].user.nickname === randomNickname);
+          assert(res.body[0].user.avatar === randomAvatar);
           assert(typeof res.body[0].user.provider === "undefined");
           assert(typeof res.body[0].user.id === "undefined");
           assert(typeof res.body[0].user.token === "undefined");

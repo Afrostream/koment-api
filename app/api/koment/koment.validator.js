@@ -5,6 +5,7 @@ const schemaCreateBody = Joi.object().keys({
   video: Joi.string().max(255).min(3).required(),
   user: Joi.object().keys({
     nickname: Joi.string().min(1).max(32).required(),
+    avatar: Joi.string().max(256),
     provider: Joi.string().max(64),
     id: Joi.string().max(64),
     token: Joi.string().max(64)
