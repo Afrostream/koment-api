@@ -11,7 +11,8 @@ app.set('etag', false);
 app.use(require('./middlewares/middleware-cachehandler.js')());
 app.use(require('./middlewares/middleware-error.js')());
 app.use(require('./middlewares/middleware-allowcrossdomain.js')());
-app.use(require('body-parser').json({limit:'500kb'}));
+app.use(require('body-parser').json());
+app.use('/static', express.static(__dirname + '/static'))
 
 // mount routes
 app.use(routes);

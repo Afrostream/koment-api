@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>test</title>
+</head>
+<body>
+  <h3>server time:</h3>
+  <div id="server-time"></div>
+  <script>
+    var HOST = location.origin.replace(/^http/, 'ws')
+    var ws = new WebSocket(HOST);
+    var el = document.getElementById('server-time');
+
+    ws.onmessage = function (event) {
+      el.innerHTML = 'Server time: ' + event.data;
+    };
+  </script>
+</body>
+</html>
