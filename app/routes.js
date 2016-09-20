@@ -4,5 +4,6 @@ const controller = require('./controller.js');
 
 router.get('/alive', controller.alive);
 router.use('/api', require('./api'));
+router.use('/auth', require('./auth'));
 
 module.exports = router;

@@ -16,15 +16,26 @@
   },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "composable-middleware": "^0.3.0",
+    "crypto": "0.0.3",
     "express": "^4.14.0",
+    "express-jwt": "^5.0.0",
     "joi": "^9.0.4",
+    "jsonwebtoken": "^7.1.9",
+    "lodash": "^4.15.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-local": "^1.0.0",
     "q": "^1.4.1",
     "redis": "^2.6.2",
+    "sequelize": "^3.24.2",
     "ws": "^1.1.1"
   },
   "devDependencies": {
     "better-assert": "^1.0.2",
     "mocha": "^3.0.2",
+    "nodemon": "^1.10.2",
+    "pg": "^6.1.0",
     "supertest": "^2.0.0"
   }
 }
