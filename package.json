@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "6.5.x"
+    "node": "6.11.1"
   },
   "dependencies": {
     "basic-auth-connect": "^1.0.0",
